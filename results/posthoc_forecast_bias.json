@@ -1,0 +1,30 @@
+{
+ "2020": {
+  "mean_fc_minus_real_MWh": 107.81942794104853,
+  "relative_to_mean_real": 0.12023690600667054
+ },
+ "2021": {
+  "mean_fc_minus_real_MWh": 72.89125140937502,
+  "relative_to_mean_real": 0.0911896836552923
+ },
+ "2022": {
+  "mean_fc_minus_real_MWh": 22.71225866208791,
+  "relative_to_mean_real": 0.022851174437599864
+ },
+ "2023": {
+  "mean_fc_minus_real_MWh": -80.45441617956621,
+  "relative_to_mean_real": -0.07713432621973178
+ },
+ "2024": {
+  "mean_fc_minus_real_MWh": -139.30414511068793,
+  "relative_to_mean_real": -0.13396878255151096
+ },
+ "2025": {
+  "mean_fc_minus_real_MWh": -120.12620289548222,
+  "relative_to_mean_real": -0.12691216705973404
+ },
+ "2026": {
+  "mean_fc_minus_real_MWh": -123.33439295730994,
+  "relative_to_mean_real": -0.1256802232960341
+ }
+}

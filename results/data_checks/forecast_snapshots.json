@@ -1,0 +1,14 @@
+{
+ "hours_per_source": {
+  "20261022T0806": 22
+ },
+ "pairs": {
+  "20261022T0806 vs archive_fetch": {
+   "common_hours": 22,
+   "first": "2026-10-22T00:00:00",
+   "last": "2026-10-22T21:00:00",
+   "max_abs_diff": 0.0
+  }
+ },
+ "pass": true
+}

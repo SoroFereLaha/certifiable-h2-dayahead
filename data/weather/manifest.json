@@ -1,0 +1,27 @@
+{
+ "57.0,9.9": {
+  "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=57.0&longitude=9.9&start_date=2024-03-01&end_date=2026-06-30&hourly=wind_speed_100m_previous_day2%2Cwind_direction_100m_previous_day2&models=ecmwf_ifs025&timezone=GMT&wind_speed_unit=ms",
+  "rows": 20448,
+  "sha256": "2d71fec03e534fd811cd5ab6f9f6fd258667d0c799d9e2927f5733168b79b0a2"
+ },
+ "56.5,8.4": {
+  "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=56.5&longitude=8.4&start_date=2024-03-01&end_date=2026-06-30&hourly=wind_speed_100m_previous_day2%2Cwind_direction_100m_previous_day2&models=ecmwf_ifs025&timezone=GMT&wind_speed_unit=ms",
+  "rows": 20448,
+  "sha256": "88e5e933ba9386aeeeff19ea64c90dfcb6f09ebbd6f2f5a423e99de7aaa3aff4"
+ },
+ "56.0,9.5": {
+  "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=56.0&longitude=9.5&start_date=2024-03-01&end_date=2026-06-30&hourly=wind_speed_100m_previous_day2%2Cwind_direction_100m_previous_day2&models=ecmwf_ifs025&timezone=GMT&wind_speed_unit=ms",
+  "rows": 20448,
+  "sha256": "2cdd9e6fd6c29ec261ce8e6aee6005c96b00f3e10d29f311d35bc4b3ae8f84ef"
+ },
+ "55.5,8.7": {
+  "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=55.5&longitude=8.7&start_date=2024-03-01&end_date=2026-06-30&hourly=wind_speed_100m_previous_day2%2Cwind_direction_100m_previous_day2&models=ecmwf_ifs025&timezone=GMT&wind_speed_unit=ms",
+  "rows": 20448,
+  "sha256": "f59951862d16f1b4f5253c293348ef735fe9ccf9fff9b9ddde760e3c50b8ef7f"
+ },
+ "55.3,9.4": {
+  "url": "https://previous-runs-api.open-meteo.com/v1/forecast?latitude=55.3&longitude=9.4&start_date=2024-03-01&end_date=2026-06-30&hourly=wind_speed_100m_previous_day2%2Cwind_direction_100m_previous_day2&models=ecmwf_ifs025&timezone=GMT&wind_speed_unit=ms",
+  "rows": 20448,
+  "sha256": "b6f19203dedfecb77c76cc45600cc02eb9386b4859e63ca979174f0ff1a1854b"
+ }
+}

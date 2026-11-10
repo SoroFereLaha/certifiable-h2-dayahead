@@ -1,0 +1,58 @@
+{
+ "price_gaps": {
+  "missing_hours_2020_2026H1": 0,
+  "missing_hours_switch_week": 0,
+  "first_hourly_from_quarters": "2025-10-01 00:00:00+00:00",
+  "min_price": -440.100006,
+  "max_price": 936.280029
+ },
+ "k_floor_count": 16,
+ "excluded_days": {
+  "train": {
+   "days": 1461,
+   "excluded": 12,
+   "share": 0.008213552361396304
+  },
+  "calib": {
+   "days": 366,
+   "excluded": 5,
+   "share": 0.01366120218579235
+  },
+  "pretest": {
+   "days": 1827,
+   "excluded": 17,
+   "share": 0.009304871373836891
+  },
+  "test": {
+   "days": 546,
+   "excluded": 11,
+   "share": 0.020146520146520148
+  },
+  "c2_train": {
+   "days": 297,
+   "excluded": 5,
+   "share": 0.016835016835016835
+  },
+  "c2_calib": {
+   "days": 181,
+   "excluded": 2,
+   "share": 0.011049723756906077
+  },
+  "c2_test": {
+   "days": 365,
+   "excluded": 9,
+   "share": 0.024657534246575342
+  },
+  "2025": {
+   "days": 365,
+   "excluded": 9,
+   "share": 0.024657534246575342
+  },
+  "2026H1": {
+   "days": 181,
+   "excluded": 2,
+   "share": 0.011049723756906077
+  }
+ },
+ "pass": true
+}
