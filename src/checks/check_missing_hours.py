@@ -1,5 +1,5 @@
 """Share of Danish days with at least one missing hour in the DK1 onshore day-ahead forecast or
-settled production, per data split. Such days are excluded."""
+settled production, per data split. The study excludes these days."""
 import glob, json, os
 import pandas as pd
 

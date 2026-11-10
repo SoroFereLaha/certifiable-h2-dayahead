@@ -44,7 +44,7 @@ def fetch():
 
 
 def load_daily():
-    """Daily features on Danish local days; a day needs every hour at every point."""
+    """Daily features on Danish local days; a day is kept only if every hour is present at every grid point."""
     frames = []
     for lat, lon in POINTS:
         f = pd.read_csv(path(lat, lon))

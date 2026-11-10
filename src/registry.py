@@ -1,9 +1,10 @@
 """Commitment registry (H4): replay of the commitments on a local EVM (Anvil).
 
-Each day's commitment is written to CommitmentRegistry.sol as at D-1, then the certified quantity as at
-settlement. The chain state is read back and compared with registry_replay/published_commitments.csv,
-and the contract is checked to refuse double commits, double settlements, settlement without
-commitment and calls from an outside account.
+The script writes each day's commitment to the CommitmentRegistry contract, as the producer would at D-1,
+then the certified quantity, as the meter adapter would at settlement. It reads the chain state back and
+compares it with registry_replay/published_commitments.csv. It also checks that the contract rejects a
+second commitment or settlement for the same day, a settlement without a commitment, and calls from an
+outside account.
 """
 import csv
 import hashlib

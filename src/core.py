@@ -48,7 +48,8 @@ REAL_COLUMNS = {
     'off': ['OffshoreWindLt100MW_MWh', 'OffshoreWindGe100MW_MWh'],
     'sol': ['SolarPowerLt10kW_MWh', 'SolarPowerGe10Lt40kW_MWh', 'SolarPowerGe40kW_MWh'],
 }
-# Series used: primary asset plus the forecast features (paper Section 4).
+# Forecast series. DK1 onshore is the primary PPA asset; the forecasts of the four series other than
+# the asset serve as features (paper Section 4).
 SERIES = [('DK1', 'on'), ('DK1', 'off'), ('DK2', 'on'), ('DK2', 'off'), ('DK1', 'sol')]
 
 

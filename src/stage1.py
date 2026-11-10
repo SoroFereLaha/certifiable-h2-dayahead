@@ -65,7 +65,7 @@ def evaluate_ratio(table, ratio, margin_split='pretest'):
     return out
 
 
-SENSITIVITIES = {  # primary ratio only, same rules, no re-tuning
+SENSITIVITIES = {  # run at the primary ratio only, with the same rules and no re-tuning
     'S1_price25': {'exception_price': 25},
     'S1b_price30': {'exception_price': 30},
     'S2_alpha10': {'alpha': 0.10},
@@ -93,8 +93,8 @@ def evaluate_sensitivity(frame, table, cfg):
 
 def evaluate_c2(table, ratio, wx):
     base = core.day_features(table, ratio)
-    # Weather exists from 2024-03 only: C1 and B1' keep their full pre-test history;
-    # C2 training, the shared calibration of C1/C2 and the test use the days that have weather.
+    # Weather forecasts start in March 2024. C1 and B1' keep their full history before the test period;
+    # C2 training, the calibration shared by C1 and C2, and the test use only days with weather data.
     days = base.join(wx, how='inner')
     feats = core.FEATURES + weather.FEATURES
     c1 = core.fit_learned(core.select(base, 'train'), core.FEATURES)

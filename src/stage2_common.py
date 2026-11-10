@@ -1,5 +1,5 @@
 """Stage 2 (paper Sections 4-5): candidate grid, development folds F1-F3 and helpers
-shared by stage2_selection.py, stage2_final_test.py and the posthoc_* scripts. Uses core.py unchanged."""
+shared by stage2_selection.py, stage2_final_test.py and the posthoc_* scripts."""
 import os
 import sys
 
@@ -17,7 +17,7 @@ CONFIGS = [(f, w) for f in FAMILIES for w in WINDOWS if not (f == 'knn' and w ==
 FALLBACK = ('hgb', 'w24')
 KNN_K = 60
 HALF_LIFE_DAYS = 365.0
-# (train_end, calib_start, calib_end, eval_start, eval_end)
+# Each fold: (train_end, calib_start, calib_end, eval_start, eval_end)
 FOLDS = {
     'F1': ('2023-12-31', '2024-01-01', '2024-12-31', '2025-01-01', '2025-06-30'),
     'F2': ('2024-06-30', '2024-07-01', '2025-06-30', '2025-07-01', '2025-12-31'),

@@ -36,7 +36,7 @@ for name in ('C3', 'R'):
     assert p == src['M2_shortfall_rate']
     assert np.allclose(metrics[name]['wilson95'], src['M2_wilson95'], atol=1e-14, rtol=0)
 
-# Vectorized paired moving-block resampling; noncircular blocks, truncate to n.
+# Paired moving-block bootstrap: same blocks for both methods, no wrap-around, cut to n days.
 rng = np.random.default_rng(20261023)
 starts = rng.integers(0, n-7+1, size=(5000, math.ceil(n/7)))
 indices = (starts[..., None] + np.arange(7)).reshape(5000, -1)[:, :n]

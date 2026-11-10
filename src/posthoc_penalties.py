@@ -41,7 +41,7 @@ for r, v in H['ratios'].items():
            'ci_bonferroni3': [float(np.quantile(d, a / 2)), float(np.quantile(d, 1 - a / 2))],
            'p_one_sided': float((np.sum(d <= 0) + 1) / (d.size + 1)),
            'M1_C3': float(la.mean()), 'M1_R': float(lb.mean()), 'n_days': int(q.size)}
-    # other penalty ratios (shortfall : surplus = (1-a)/a), same commitments
+    # same commitments, scored with other penalty ratios (shortfall : surplus = (1-a)/a)
     res['penalty_ratios'] = {}
     for alpha in (0.02, 0.05, 0.10, 0.20):
         la2, lb2 = core.pinball(q, c3, alpha), core.pinball(q, rr, alpha)
@@ -52,7 +52,7 @@ for r, v in H['ratios'].items():
     out[r] = res
     pv[r] = res['p_one_sided']
 
-# Holm over the three sizes
+# Holm correction across the three electrolyser sizes
 order = sorted(pv, key=pv.get)
 holm, running = {}, 0.0
 for i, r in enumerate(order):
